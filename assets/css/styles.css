@@ -24,6 +24,7 @@ h6 {
     font-family: "Sora", sans-serif;
 }
 
+/* common  */
 /* font size và font family có font mặc định nên cần kế thừa từ body */
 input,
 textarea,
@@ -32,3 +33,80 @@ button {
     font-size: inherit;
     font-family: inherit;
 }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.btn {
+    --height: 56px;
+
+    display: inline-block;
+    border: 1px solid #000958;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: var(--height);
+    height: var(--height);
+    text-align: center;
+    color: #000958;
+    min-width: 130px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+/* header */
+.header {
+
+}
+
+ /* header top */
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 8px;
+ }
+
+ .navbar__list {
+    display: flex;
+ }
+
+ .navbar__item, .header-action__signin {
+    padding: 8px 16px;
+ }
+
+ .navbar__item:hover > .navbar__link,
+ .navbar__item.navbar__item--active > .navbar__link{
+    text-shadow: 1px 0 0 transparent;
+    color: #000958;
+ }
+
+ .navbar__link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #5E6085;
+ }
+
+ .header-action {
+    display: flex;
+    align-items: center;
+ }
+
+ .header-action__signup {
+    --height: 50px;
+
+    min-width: 118px;
+    border: 1px solid rgb(0, 9, 88, 0.7);
+ }
+
+ 
