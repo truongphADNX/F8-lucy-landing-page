@@ -40,6 +40,20 @@ a {
     text-decoration: none;
 }
 
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.2;
+    color: #000958;
+}
+
+.section-desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: #656689;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -279,10 +293,6 @@ a {
 }
 
 .hero__desc {
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9;
-    color: #656689;
     margin-top: 24px;
     max-width: 391px;
 }
@@ -314,4 +324,68 @@ a {
     text-align: center;
     text-decoration-line: underline;
     color: #000958;
+}
+
+/* about */
+.about {
+    margin-top: 130px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__lable {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5E6085;
+}
+
+.about__header{
+    margin-top: 15px;
+    max-width: 448px;
+}
+
+.about__desc {
+    margin-top: 24px;
+    max-width: 431px;
+}
+
+.about__checklist {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 36px;
+    grid-row-gap: 34px;
+    justify-content: flex-start;
+}
+
+.about__check--item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496A;
+}
+
+.about__check--item::before {
+    margin-right: 10px;
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #FF5D31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__check--item::after {
+    content: url('../icons/check-icon.svg');
+    position: absolute;
+    top: 2px;
+    left: 5px;
 }
