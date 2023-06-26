@@ -1055,3 +1055,131 @@ a {
     border-bottom: 1px solid rgba(255, 91, 46, 0.4);
     border-right: 1px solid rgba(255, 91, 46, 0.4);
 }
+
+
+/* Preview */
+.preview {
+    padding: 53px 0;
+}
+
+.preview__inner {
+    column-gap: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.preview__content {
+    overflow: hidden;
+}
+.preview__list {
+    display: flex;
+}
+
+.preview__control {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5PX solid #FFD1C4;
+    background: transparent;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.preview__right {
+    margin-left: auto;
+}
+
+.preview__control:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.preview-item {
+    display: flex;
+    align-items: center;  
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.preview-item__media {
+    position: relative;
+    width: 274px;
+    flex-shrink: 0;
+    border-radius: 137px;
+}
+
+.preview-item__media::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80%;
+    background: #FFDA54;
+    border-radius: inherit;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.preview-item__media--img {
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.preview-item__content {
+    margin-top: 75px;
+    margin-left: 115px;
+}
+
+.preview-item__quote--quote {
+    max-width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.preview-item__quote--author {
+    display: inline-block;
+    position: relative;
+    margin-top: 34px;
+    margin-left: 28px;
+    font-family: Sora;
+    color: #282828;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.preview-item__quote--author::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top:50%;
+    left: -28px;
+    background: #000;
+}
+
+.preview__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+
+.preview__dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.preview__dot.preview__dot--active {
+    width: 24px;
+    background-color: var(--primary-color);
+}
